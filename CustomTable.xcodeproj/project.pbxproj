@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		D13689D51ADEA0E900491E62 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D13689D41ADEA0E900491E62 /* main.m */; };
 		D13689D81ADEA0E900491E62 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D13689D71ADEA0E900491E62 /* AppDelegate.m */; };
-		D13689DB1ADEA0E900491E62 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D13689DA1ADEA0E900491E62 /* ViewController.m */; };
 		D13689DE1ADEA0E900491E62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13689DC1ADEA0E900491E62 /* Main.storyboard */; };
 		D13689E01ADEA0E900491E62 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13689DF1ADEA0E900491E62 /* Images.xcassets */; };
 		D13689E31ADEA0E900491E62 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D13689E11ADEA0E900491E62 /* LaunchScreen.xib */; };
 		D13689EF1ADEA0E900491E62 /* CustomTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D13689EE1ADEA0E900491E62 /* CustomTableTests.m */; };
+		D13689FA1ADEA2A200491E62 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D13689F91ADEA2A200491E62 /* CustomTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		D13689D41ADEA0E900491E62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D13689D61ADEA0E900491E62 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D13689D71ADEA0E900491E62 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D13689D91ADEA0E900491E62 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D13689DA1ADEA0E900491E62 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D13689DD1ADEA0E900491E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D13689DF1ADEA0E900491E62 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D13689E21ADEA0E900491E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D13689E81ADEA0E900491E62 /* CustomTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D13689ED1ADEA0E900491E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D13689EE1ADEA0E900491E62 /* CustomTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableTests.m; sourceTree = "<group>"; };
+		D13689F81ADEA2A200491E62 /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
+		D13689F91ADEA2A200491E62 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +83,12 @@
 			children = (
 				D13689D61ADEA0E900491E62 /* AppDelegate.h */,
 				D13689D71ADEA0E900491E62 /* AppDelegate.m */,
-				D13689D91ADEA0E900491E62 /* ViewController.h */,
-				D13689DA1ADEA0E900491E62 /* ViewController.m */,
 				D13689DC1ADEA0E900491E62 /* Main.storyboard */,
 				D13689DF1ADEA0E900491E62 /* Images.xcassets */,
 				D13689E11ADEA0E900491E62 /* LaunchScreen.xib */,
 				D13689D21ADEA0E900491E62 /* Supporting Files */,
+				D13689F81ADEA2A200491E62 /* CustomTableViewController.h */,
+				D13689F91ADEA2A200491E62 /* CustomTableViewController.m */,
 			);
 			path = CustomTable;
 			sourceTree = "<group>";
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D13689DB1ADEA0E900491E62 /* ViewController.m in Sources */,
 				D13689D81ADEA0E900491E62 /* AppDelegate.m in Sources */,
+				D13689FA1ADEA2A200491E62 /* CustomTableViewController.m in Sources */,
 				D13689D51ADEA0E900491E62 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
