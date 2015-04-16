@@ -15,6 +15,7 @@
 		D13689EF1ADEA0E900491E62 /* CustomTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D13689EE1ADEA0E900491E62 /* CustomTableTests.m */; };
 		D13689FA1ADEA2A200491E62 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D13689F91ADEA2A200491E62 /* CustomTableViewController.m */; };
 		D1F80EB51ADEC55400A0DBB7 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F80EB41ADEC55400A0DBB7 /* CustomTableViewCell.m */; };
+		D1F80EED1AE0244700A0DBB7 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F80EEC1AE0244700A0DBB7 /* recipes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		D13689F91ADEA2A200491E62 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 		D1F80EB31ADEC55400A0DBB7 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		D1F80EB41ADEC55400A0DBB7 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		D1F80EEC1AE0244700A0DBB7 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				D13689F91ADEA2A200491E62 /* CustomTableViewController.m */,
 				D1F80EB31ADEC55400A0DBB7 /* CustomTableViewCell.h */,
 				D1F80EB41ADEC55400A0DBB7 /* CustomTableViewCell.m */,
+				D1F80EEC1AE0244700A0DBB7 /* recipes.plist */,
 			);
 			path = CustomTable;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				D13689DE1ADEA0E900491E62 /* Main.storyboard in Resources */,
 				D13689E31ADEA0E900491E62 /* LaunchScreen.xib in Resources */,
+				D1F80EED1AE0244700A0DBB7 /* recipes.plist in Resources */,
 				D13689E01ADEA0E900491E62 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
