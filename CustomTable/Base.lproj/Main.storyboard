@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BPf-71-iey">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="QP4-Bx-685">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--Custom Table View Controller-->
+        <!--Recipes-->
         <scene sceneID="ibL-C6-yPd">
             <objects>
                 <tableViewController id="BPf-71-iey" customClass="CustomTableViewController" sceneMemberID="viewController">
@@ -47,10 +47,59 @@
                             <outlet property="delegate" destination="BPf-71-iey" id="iQJ-mb-qDd"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Recipes" id="XCe-wU-wn5"/>
+                    <connections>
+                        <segue destination="Z1I-ik-OCp" kind="push" identifier="ContactsViewController" id="gWR-wE-PVe"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LwV-Bf-xSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="541" y="371"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Tx5-9G-4hT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QP4-Bx-685" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o4E-9J-Jnf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BPf-71-iey" kind="relationship" relationship="rootViewController" id="QzQ-y0-woE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wW0-JE-qC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="129" y="371"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="1Ui-ay-alg">
+            <objects>
+                <viewController id="Z1I-ik-OCp" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Toz-T8-FI4"/>
+                        <viewControllerLayoutGuide type="bottom" id="YNz-qZ-aGR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ij9-ed-fJU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cme-55-xM0">
+                                <rect key="frame" x="33" y="206" width="255" height="101"/>
+                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NZZ-Wx-KmC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixb-m7-Wal" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="371"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
