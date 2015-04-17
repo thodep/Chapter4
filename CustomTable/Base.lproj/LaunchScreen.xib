@@ -23,6 +23,9 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="ham_and_egg_sandwich" translatesAutoresizingMaskIntoConstraints="NO" id="zY8-uf-QZG">
+                    <rect key="frame" x="-133" y="269" width="560" height="472"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -38,4 +41,7 @@
             <point key="canvasLocation" x="629" y="411"/>
         </view>
     </objects>
+    <resources>
+        <image name="ham_and_egg_sandwich" width="560" height="350"/>
+    </resources>
 </document>

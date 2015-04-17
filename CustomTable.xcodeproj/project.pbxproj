@@ -100,9 +100,9 @@
 				D13689F91ADEA2A200491E62 /* CustomTableViewController.m */,
 				D1F80EB31ADEC55400A0DBB7 /* CustomTableViewCell.h */,
 				D1F80EB41ADEC55400A0DBB7 /* CustomTableViewCell.m */,
-				D1F80EEC1AE0244700A0DBB7 /* recipes.plist */,
 				D12F865A1AE0B15000684F63 /* DetailViewController.h */,
 				D12F865B1AE0B15000684F63 /* DetailViewController.m */,
+				D1F80EEC1AE0244700A0DBB7 /* recipes.plist */,
 			);
 			path = CustomTable;
 			sourceTree = "<group>";
