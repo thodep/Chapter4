@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="71" id="u3t-bg-7Dd" customClass="CustomTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="71" id="u3t-bg-7Dd" customClass="CustomTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u3t-bg-7Dd" id="SmY-BQ-Vbb">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -39,6 +39,7 @@
                                     <outlet property="nameLabel" destination="mEq-iP-JhY" id="FYA-M5-K6T"/>
                                     <outlet property="preptimeLabel" destination="tGU-N7-yJ1" id="55p-1q-xG5"/>
                                     <outlet property="thumbnailImageView" destination="iRi-DP-5cf" id="Nfg-IC-F75"/>
+                                    <segue destination="Z1I-ik-OCp" kind="push" identifier="ContactRecipes" id="d1g-6I-vu0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -48,9 +49,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Recipes" id="XCe-wU-wn5"/>
-                    <connections>
-                        <segue destination="Z1I-ik-OCp" kind="push" identifier="ContactsViewController" id="gWR-wE-PVe"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LwV-Bf-xSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
