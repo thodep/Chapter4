@@ -1,26 +1,25 @@
 //
-//  DetailViewController.m
+//  AboutViewController.m
 //  CustomTable
 //
-//  Created by tho dang on 2015-04-16.
+//  Created by tho dang on 2015-04-20.
 //  Copyright (c) 2015 TD. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "AboutViewController.h"
 
-@interface DetailViewController ()
+@interface AboutViewController ()
 
 @end
 
-@implementation DetailViewController
-
+@implementation AboutViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //Set the Label text with the selected recipe
-   self.recipeLabel.text = self.recipeName;
-   
-   
+   NSURL *url = [NSURL fileURLWithPath:[[NSBundle
+                                       mainBundle]pathForResource:@"about.html" ofType:nil]];
+   NSURLRequest *request = [NSURLRequest requestWithURL:url];
+   [self.webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {

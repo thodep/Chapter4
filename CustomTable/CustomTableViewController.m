@@ -8,6 +8,8 @@
 
 #import "CustomTableViewController.h"
 #import "CustomTableViewCell.h"
+#import "DetailViewController.h"
+
 
 @interface CustomTableViewController ()
 
@@ -86,6 +88,16 @@
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+   
+   
+   
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+   if([segue.identifier isEqualToString:@"ContactRecipeDetail"]){
+       NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+       DetailViewController *destViewController =segue.destinationViewController;
+       destViewController.recipeName =[recipeNames objectAtIndex:indexPath.row];
+   }
+}
 @end
