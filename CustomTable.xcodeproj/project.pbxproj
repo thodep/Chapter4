@@ -18,8 +18,8 @@
 		D14EA78C1AE5DF9B00AADFCF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D14EA78B1AE5DF9B00AADFCF /* Info.plist */; };
 		D14EA78E1AE5E0BD00AADFCF /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D14EA78D1AE5E0BD00AADFCF /* about.jpg */; };
 		D14EA7901AE5E0CB00AADFCF /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = D14EA78F1AE5E0CB00AADFCF /* about.html */; };
+		D1B9DC811AE73E9B00434022 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = D1B9DC801AE73E9B00434022 /* Recipe.m */; };
 		D1F80EB51ADEC55400A0DBB7 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D1F80EB41ADEC55400A0DBB7 /* CustomTableViewCell.m */; };
-		D1F80EED1AE0244700A0DBB7 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1F80EEC1AE0244700A0DBB7 /* recipes.plist */; };
 		D1FA11B71AE5A8020009422A /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FA11B61AE5A8020009422A /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -48,12 +48,13 @@
 		D13689EE1ADEA0E900491E62 /* CustomTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableTests.m; sourceTree = "<group>"; };
 		D13689F81ADEA2A200491E62 /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
 		D13689F91ADEA2A200491E62 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
-		D14EA78B1AE5DF9B00AADFCF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14EA78B1AE5DF9B00AADFCF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = CustomTableTests/Info.plist; sourceTree = SOURCE_ROOT; };
 		D14EA78D1AE5E0BD00AADFCF /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = about.jpg; sourceTree = "<group>"; };
 		D14EA78F1AE5E0CB00AADFCF /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		D1B9DC7F1AE73E9B00434022 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Recipe.h; path = ../Recipe.h; sourceTree = "<group>"; };
+		D1B9DC801AE73E9B00434022 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Recipe.m; path = ../Recipe.m; sourceTree = "<group>"; };
 		D1F80EB31ADEC55400A0DBB7 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		D1F80EB41ADEC55400A0DBB7 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
-		D1F80EEC1AE0244700A0DBB7 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 		D1FA11B51AE5A8020009422A /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		D1FA11B61AE5A8020009422A /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,15 +105,16 @@
 				D13689DF1ADEA0E900491E62 /* Images.xcassets */,
 				D13689E11ADEA0E900491E62 /* LaunchScreen.xib */,
 				D13689D21ADEA0E900491E62 /* Supporting Files */,
-				D1FA11B51AE5A8020009422A /* AboutViewController.h */,
-				D1FA11B61AE5A8020009422A /* AboutViewController.m */,
-				D1F80EB31ADEC55400A0DBB7 /* CustomTableViewCell.h */,
-				D1F80EB41ADEC55400A0DBB7 /* CustomTableViewCell.m */,
 				D13689F81ADEA2A200491E62 /* CustomTableViewController.h */,
 				D13689F91ADEA2A200491E62 /* CustomTableViewController.m */,
+				D1F80EB31ADEC55400A0DBB7 /* CustomTableViewCell.h */,
+				D1F80EB41ADEC55400A0DBB7 /* CustomTableViewCell.m */,
 				D12F865A1AE0B15000684F63 /* DetailViewController.h */,
 				D12F865B1AE0B15000684F63 /* DetailViewController.m */,
-				D1F80EEC1AE0244700A0DBB7 /* recipes.plist */,
+				D1FA11B51AE5A8020009422A /* AboutViewController.h */,
+				D1FA11B61AE5A8020009422A /* AboutViewController.m */,
+				D1B9DC7F1AE73E9B00434022 /* Recipe.h */,
+				D1B9DC801AE73E9B00434022 /* Recipe.m */,
 			);
 			path = CustomTable;
 			sourceTree = "<group>";
@@ -131,10 +133,18 @@
 		D13689EB1ADEA0E900491E62 /* CustomTableTests */ = {
 			isa = PBXGroup;
 			children = (
-				D14EA78B1AE5DF9B00AADFCF /* Info.plist */,
 				D13689EE1ADEA0E900491E62 /* CustomTableTests.m */,
+				D1B9DC7E1AE7365C00434022 /* Supporting Files  */,
 			);
 			path = CustomTableTests;
+			sourceTree = "<group>";
+		};
+		D1B9DC7E1AE7365C00434022 /* Supporting Files  */ = {
+			isa = PBXGroup;
+			children = (
+				D14EA78B1AE5DF9B00AADFCF /* Info.plist */,
+			);
+			name = "Supporting Files ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,7 +232,6 @@
 				D13689DE1ADEA0E900491E62 /* Main.storyboard in Resources */,
 				D13259331AE09DB20087684E /* Images.xcassets in Resources */,
 				D13689E31ADEA0E900491E62 /* LaunchScreen.xib in Resources */,
-				D1F80EED1AE0244700A0DBB7 /* recipes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1FA11B71AE5A8020009422A /* AboutViewController.m in Sources */,
+				D1B9DC811AE73E9B00434022 /* Recipe.m in Sources */,
 				D12F865C1AE0B15000684F63 /* DetailViewController.m in Sources */,
 				D13689D81ADEA0E900491E62 /* AppDelegate.m in Sources */,
 				D13689FA1ADEA2A200491E62 /* CustomTableViewController.m in Sources */,

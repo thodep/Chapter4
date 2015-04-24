@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Cell" rowHeight="71" id="u3t-bg-7Dd" customClass="CustomTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CustomTableCell" rowHeight="71" id="u3t-bg-7Dd" customClass="CustomTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u3t-bg-7Dd" id="SmY-BQ-Vbb">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -38,7 +38,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="nameLabel" destination="mEq-iP-JhY" id="FYA-M5-K6T"/>
-                                    <outlet property="preptimeLabel" destination="tGU-N7-yJ1" id="55p-1q-xG5"/>
+                                    <outlet property="prepTimeLabel" destination="tGU-N7-yJ1" id="Fdb-s5-qzd"/>
                                     <outlet property="thumbnailImageView" destination="iRi-DP-5cf" id="Nfg-IC-F75"/>
                                     <segue destination="Z1I-ik-OCp" kind="push" identifier="ContactRecipeDetail" id="d1g-6I-vu0"/>
                                 </connections>
@@ -84,7 +84,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-Un-Q4b">
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-Un-Q4b">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
@@ -94,10 +94,8 @@
                             <constraint firstItem="v9e-Un-Q4b" firstAttribute="leading" secondItem="q2G-S5-YbP" secondAttribute="leadingMargin" constant="-16" id="99c-Sj-boA"/>
                             <constraint firstItem="v9e-Un-Q4b" firstAttribute="top" secondItem="q2G-S5-YbP" secondAttribute="topMargin" id="Fau-kE-uit"/>
                             <constraint firstAttribute="trailingMargin" secondItem="v9e-Un-Q4b" secondAttribute="trailing" constant="-16" id="GmW-Hp-CUW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="v9e-Un-Q4b" secondAttribute="trailing" id="IHN-Nj-BdZ"/>
                             <constraint firstItem="v9e-Un-Q4b" firstAttribute="bottom" secondItem="q2G-S5-YbP" secondAttribute="bottomMargin" id="JTk-yJ-yi3"/>
                             <constraint firstItem="v9e-Un-Q4b" firstAttribute="bottom" secondItem="q2G-S5-YbP" secondAttribute="bottomMargin" id="YNj-fa-LAY"/>
-                            <constraint firstItem="v9e-Un-Q4b" firstAttribute="leading" secondItem="q2G-S5-YbP" secondAttribute="leadingMargin" id="aVx-hH-uSc"/>
                             <constraint firstItem="v9e-Un-Q4b" firstAttribute="top" secondItem="q2G-S5-YbP" secondAttribute="topMargin" id="cth-fx-Hqo"/>
                         </constraints>
                     </view>
@@ -141,23 +139,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cme-55-xM0">
-                                <rect key="frame" x="33" y="206" width="255" height="101"/>
-                                <fontDescription key="fontDescription" name="LaoSangamMN" family="Lao Sangam MN" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-frame" translatesAutoresizingMaskIntoConstraints="NO" id="p3E-6e-t5v">
+                                <rect key="frame" x="12" y="72" width="297" height="199"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vB2-CM-yRc">
+                                <rect key="frame" x="20" y="77" width="280" height="175"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KS-ph-Is6">
+                                <rect key="frame" x="24" y="273" width="182" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                <color key="textColor" red="0.58823531870000001" green="0.1294117719" blue="0.11372549830000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prep Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYk-wH-wgb">
+                                <rect key="frame" x="198" y="273" width="127" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
+                                <color key="textColor" red="0.68627452850000004" green="0.47450983520000001" blue="0.1411764771" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-Gj-lUX">
+                                <rect key="frame" x="20" y="294" width="276" height="207"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="NZZ-Wx-KmC"/>
                     <connections>
-                        <outlet property="recipeLabel" destination="Cme-55-xM0" id="tPg-Ux-s4F"/>
+                        <outlet property="ingredientsTextView" destination="jdb-Gj-lUX" id="fQ3-ip-gX4"/>
+                        <outlet property="prepTimeLabel" destination="DYk-wH-wgb" id="iwL-cZ-lhF"/>
+                        <outlet property="recipeImageView" destination="vB2-CM-yRc" id="rqU-W0-uM4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixb-m7-Wal" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1434" y="371"/>
+            <point key="canvasLocation" x="1640" y="371"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gmD-Gm-RkP">
@@ -179,6 +198,9 @@
             <point key="canvasLocation" x="-51" y="791"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo-frame" width="297" height="199"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
